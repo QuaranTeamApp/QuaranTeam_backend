@@ -5,9 +5,6 @@
 * A user can join 1 or more groups
 * Each group has a group name and a group admin
 
-## Non-functional:
-* 
-
 ## Tables:
 * Base entity = User
 * Second entity = Groups
