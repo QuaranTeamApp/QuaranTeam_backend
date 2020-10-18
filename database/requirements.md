@@ -14,24 +14,23 @@
 * groups (List of groups)
 
 ### Group Table
-# groupname PRIMARY string NOT NULL
-# admin user NOT NULL
-# deleted BOOLEAN NOT NULL (DEFAULT true)
-# users (list of user type, append to end)
-# users_pending (list of user type)
-# date_created DATETIME NOT NULL
-# group_data JSON
-# capacity INTEGER NOT NULL (DEFAULT 256)
-# invite_code STRING NOT NULL (UUID)
+* groupname PRIMARY string NOT NULL
+* admin user NOT NULL
+* deleted BOOLEAN NOT NULL (DEFAULT true)
+* users (list of user type, append to end)
+* users_pending (list of user type)
+* date_created DATETIME NOT NULL
+* group_data JSON
+* capacity INTEGER NOT NULL (DEFAULT 256)
+* invite_code STRING NOT NULL (UUID)
 
 #### group_data
-> {
->     "link" : string,
->     "meeting_times" : {
->        "time1" : datetime,
->        "time2" : datetime,
->        "time3" : datetime
->     },
->     "description" : string,
-> }
-
+{
+    "link" : string,
+    "meeting_times" : {
+       "time1" : datetime,
+       "time2" : datetime,
+       "time3" : datetime
+    },
+    "description" : string,
+}
