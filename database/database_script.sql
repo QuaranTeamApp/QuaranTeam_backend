@@ -90,19 +90,12 @@ CREATE TABLE IF NOT EXISTS `mydb`.`pending_user` (
   PRIMARY KEY (`id`),
   INDEX `group_id_idx` (`group_id` ASC) VISIBLE,
   INDEX `user_id_idx` (`user_id` ASC) VISIBLE,
-  CONSTRAINT `group_id`
     FOREIGN KEY (`group_id`)
     REFERENCES `mydb`.`group` (`id`)
     ON DELETE NO ACTION
     ON UPDATE NO ACTION,
-  CONSTRAINT `user_id`
     FOREIGN KEY (`user_id`)
     REFERENCES `mydb`.`user` (`id`)
     ON DELETE NO ACTION
     ON UPDATE NO ACTION)
 ENGINE = InnoDB;
-
-
-SET SQL_MODE=@OLD_SQL_MODE;
-SET FOREIGN_KEY_CHECKS=@OLD_FOREIGN_KEY_CHECKS;
-SET UNIQUE_CHECKS=@OLD_UNIQUE_CHECKS;
