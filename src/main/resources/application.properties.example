@@ -2,3 +2,5 @@ spring.jpa.hibernate.ddl-auto=update
 spring.datasource.url=jdbc:mysql://$trialdatabase.cdencur1nuof.us-west-1.rds.amazonaws.com:3306/mydb
 spring.datasource.username=
 spring.datasource.password=
+
+server.port=8081
