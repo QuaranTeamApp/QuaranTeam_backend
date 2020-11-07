@@ -1,5 +1,0 @@
-host url: trialdatabase.cdencur1nuof.us-west-1.rds.amazonaws.com
-hostname: 127.0.0.1
-username: rakeen01
-port: 3306
-master DB password: quaranteam321!
